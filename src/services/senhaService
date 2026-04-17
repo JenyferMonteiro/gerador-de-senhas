@@ -1,0 +1,13 @@
+export default function gerarSenha(){
+
+    let senha: string = '';
+    let alfabeto: string = 'skhrgf#@4346';
+    const TAM: number = 8;
+
+    for(let i=0; i<TAM; i++){
+        senha = senha+ alfabeto.charAt(Math.floor(Math.random() * alfabeto.length));
+    }
+
+    console.log("senha: ", senha);
+    return senha;
+}
