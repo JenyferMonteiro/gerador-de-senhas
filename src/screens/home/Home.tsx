@@ -1,22 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
 import styles from './HomeStyle';
-import Rodape from '../../components/rodape/Rodape';
-import {Logo} from '../../components/logo/Logo';
+import { Logo } from '../../components/logo/Logo';
+import { SenhaInput } from '../../components/senhaInput/SenhaInput'
+import { SenhaBotoes } from '../../components/senhaBotoes/SenhaBotoes';
 
 export default function Home() {
   return (
-    <View style={styles.container}>
-      <view style={styles.logoContainer}></view>
-      <Logo />
-      <view/>
-      <view style={styles.entradaContainer}></view>
-      <Logo />
-      <Text>meu primeiro componente</Text>
+    <View style={styles.appContainer}>
+      <View style={styles.logoContainer}>
+        <SenhaBotoes/>
+        <Logo />
+      </View>
+      <View style={styles.inputContainer}>
+        <SenhaInput />
+      </View>
+      <Text>Meu primeiro componente!</Text>
       <StatusBar style="auto" />
-      <Rodape />
-
     </View>
   );
 }
+
+

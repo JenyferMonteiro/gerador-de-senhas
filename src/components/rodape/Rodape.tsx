@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import { View, Text } from 'react-native';
 
 import { styles } from './RodapeStyle';
 
 export default function Rodape() {
-    return(
+  return (
     <View style={styles.container}>
-        <Text> Teste teste </Text>
+        <Text>Teste Teste</Text>
     </View>
-);
+  );
 }
